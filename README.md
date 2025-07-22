@@ -1,36 +1,33 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 💵 짠짠북 ( 가계부 )
 
-## Getting Started
+## 기술스택
 
-First, run the development server:
+### 프론트엔드
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+`next.js` , `TypeScript` , `Jotai` , `tanstackQuery` , `React Hook Form` , `Recharts` , `Tailwind CSS` + `shadcn/ui`
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 백엔드
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+`Supabase` , `Supabase Auth (JWT)`
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 패키지 매니저
 
-## Learn More
+`pnpm`
 
-To learn more about Next.js, take a look at the following resources:
+## MVP 기능
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. 로그인 ( 사용자 인증 )
+   1. 소셜 로그인
+2. 수입 / 지출 내역 관리 ( CRUD )
+   1. 날짜 , 금액 , 카테고리 ,메모 를 포함한 거래내역 추가/ 조회 / 수정 / 삭제
+   2. 사용자 저으이 카테고리 ( 사용자가 직접 카테고리를 생성/수정/삭제 )
+3. 월별 / 연간 정산 및 시각화
+   1. 월별 / 연간 총수입,지출 요약 대시보드
+   2. 카테괴별 지출 비율 차트
+4. 예산설정
+   1. 월별 사용 예산 지정 ( 대시보드에서 시각화 )
+5. 챌린지 / 목표 설정
+   1. 목표를 설정해서 카테고리 지출 / 저출을 연동하여 달성율 추적
+6. 다크모드
+   1. 라이트 / 다크 모드
+7. 데이터 내보내기
