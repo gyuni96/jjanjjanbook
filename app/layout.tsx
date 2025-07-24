@@ -6,7 +6,7 @@ import { Providers } from "@/components/providers"
 
 const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
-  title: "머니로그 (MoneyLog)",
+  title: "짠짠북 💵",
   description: "나의 소비 습관을 관리하는 스마트한 가계부",
 }
 

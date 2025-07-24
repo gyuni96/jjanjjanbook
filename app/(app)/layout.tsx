@@ -1,4 +1,4 @@
-import { Layout, Sidebar } from "lucide-react"
+import Sidebar from "@/components/common/sidebar"
 import React from "react"
 
 const AppLayout = ({ children }: { children: React.ReactNode }) => {
